@@ -18,7 +18,7 @@ const AddQuiz = () => {
   const handleSubmit = async e => {
     e.preventDefault();
     try {
-      const res = await fetch('http://localhost:3999/quiz/add', {
+      const res = await fetch(`${import.meta.env.VITE_Backend}/quiz/add`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)

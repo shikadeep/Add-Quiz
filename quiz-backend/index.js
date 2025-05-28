@@ -12,7 +12,7 @@ const port = process.env.PORT || 4000;
 app.use(cors());
 app.use(bodyParser.json()); // 👈 This should be a function call with ()
 
-app.use('/quiz', QuizRouter);
+app.use('/api/quiz', QuizRouter);
 
 app.get('/', (req, res)=>{
     res.send("hello welcome jiii");
