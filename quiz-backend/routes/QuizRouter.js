@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const Quiz = require('../Models/Quiz');
+const Quiz = require('../models/Quiz');
 
 router.get('/view', async (req, res)=>{
     try{
